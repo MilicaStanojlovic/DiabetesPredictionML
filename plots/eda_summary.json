@@ -1,0 +1,1 @@
+{"rows":768,"missing_ratio":{"Insulin":0.4869791667,"SkinThickness":0.2955729167,"Pregnancies":0.0,"Glucose":0.0,"BloodPressure":0.0,"BMI":0.0,"DiabetesPedigreeFunction":0.0,"Age":0.0,"Outcome":0.0},"strong_corr_pairs_|r|>0.7":[],"class_balance":{"0":0.6510416667,"1":0.3489583333}}
