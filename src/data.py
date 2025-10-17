@@ -14,9 +14,9 @@ def load_csv(path: str, zero_as_missing: bool = True) -> pd.DataFrame:
     missing = set([*FEATURES, TARGET]) - set(df.columns)
     if missing:
         raise ValueError(f"CSV missing columns: {missing}")
-    # Normalize column names just in case
+    
     df = df[[*FEATURES, TARGET]].copy()
-    # Treat zeros as missing for specified columns
+    
     if zero_as_missing:
         for c in ZERO_AS_MISSING:
             df.loc[df[c] == 0, c] = pd.NA
